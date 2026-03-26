@@ -1,0 +1,11 @@
+flowchart TD
+  S([Start]) --> I[Initialize Context]
+  I --> Q{Business Condition?}
+  Q -- Yes --> P[Process Path A]
+  Q -- No --> R[Process Path B]
+  P --> X{Error Detected?}
+  X -- Yes --> EH[Exception Handling]
+  X -- No --> C[Commit/Finalize]
+  R --> C
+  EH --> C
+  C --> E([End])

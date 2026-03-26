@@ -1,0 +1,4 @@
+version: 1
+display_name: Legacy Dependency Mapper
+short_description: Maps technical/business dependencies for migration.
+default_prompt: Build a normalized dependency catalog with criticality, impact, and migration-wave recommendations.

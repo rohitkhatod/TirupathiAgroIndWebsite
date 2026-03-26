@@ -1,0 +1,8 @@
+flowchart LR
+  A[PRG:ENTRY] --> B[SUB:MAIN]
+  B --> C[SUB:STEP_A]
+  B --> D[SUB:STEP_B]
+  C --> E[EXT:DOWNSTREAM_INTERFACE]
+
+  classDef critical fill:#ffe5e5,stroke:#d33,stroke-width:2px;
+  class B,E critical;

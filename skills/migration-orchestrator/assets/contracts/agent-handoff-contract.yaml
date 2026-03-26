@@ -1,0 +1,34 @@
+version: 1
+pipeline:
+  - stage: understanding
+    producer: m204-code-understanding
+    required_outputs:
+      - m204_understanding_package
+      - assumptions_register
+  - stage: business_rules
+    producer: business-rule-docx-builder
+    required_outputs:
+      - business_rules_document
+      - decision_tables
+  - stage: dependencies
+    producer: legacy-dependency-mapper
+    required_outputs:
+      - dependency_catalog
+      - dependency_risk_matrix
+  - stage: visuals
+    producer: callgraph-flowchart-generator
+    required_outputs:
+      - call_graph
+      - flowcharts
+  - stage: conversion
+    producer: m204-to-cobol-transformer
+    required_outputs:
+      - cobol_conversion_spec
+      - traceability_matrix
+quality_contract:
+  required_fields:
+    - artifact_id
+    - source_evidence
+    - confidence
+    - assumptions
+    - owner_skill

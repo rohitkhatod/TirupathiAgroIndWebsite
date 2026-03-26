@@ -1,0 +1,4 @@
+version: 1
+display_name: Callgraph Flowchart Generator
+short_description: Produces call graphs and flowcharts from legacy code analysis.
+default_prompt: Generate Mermaid call graphs and execution flowcharts with clear critical-path and exception-path annotations.

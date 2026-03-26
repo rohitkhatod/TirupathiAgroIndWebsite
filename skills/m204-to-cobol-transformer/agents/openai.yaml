@@ -1,0 +1,4 @@
+version: 1
+display_name: M204 to COBOL Transformer
+short_description: Converts M204 logic into traceable COBOL deliverables.
+default_prompt: Transform analyzed M204 logic into COBOL design/source artifacts with explicit rule and dependency traceability.

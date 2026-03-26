@@ -1,0 +1,4 @@
+version: 1
+display_name: Business Rule DOCX Builder
+short_description: Produces Word-ready business-rule documentation.
+default_prompt: Convert analysis findings into a business-rule document with full source traceability and confidence scoring.
