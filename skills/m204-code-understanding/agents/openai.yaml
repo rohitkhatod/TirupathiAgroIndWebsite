@@ -1,0 +1,4 @@
+version: 1
+display_name: M204 Code Understanding
+short_description: Builds semantic understanding of Model 204 programs.
+default_prompt: Analyze this M204 codebase and produce a structured understanding package with assumptions and confidence tags.

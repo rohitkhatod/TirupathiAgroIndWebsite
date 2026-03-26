@@ -1,0 +1,4 @@
+version: 1
+display_name: Migration Orchestrator
+short_description: Coordinates multi-agent M204-to-COBOL migration workflow.
+default_prompt: Orchestrate all migration skills with stage gates, traceability, and risk governance.
